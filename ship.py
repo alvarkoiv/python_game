@@ -5,7 +5,7 @@ class Ship():
         """Initialize ship and define ship start position"""
         self.screen = screen
         self.game_settings = game_settings
-        self.image = pygame.image.load("images/ship.bmp")
+        self.image = pygame.image.load("images/submarine.jpg")
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
         self.rect.centerx = self.screen_rect.centerx
