@@ -115,7 +115,7 @@ def update_aliens(game_settings, stats, screen, ship, aliens, bullets):
     aliens.update()
     # Check collisions between ship and aliens
     if pygame.sprite.spritecollideany(ship, aliens):
-        print("Ship hit :(")
+        ship_hit(game_settings, stats, screen, ship, aliens, bullets)
 
 
 def ship_hit(game_settings, stats, screen, ship, aliens, bullets):
