@@ -47,13 +47,19 @@ def update_screen(game_settings, screen, ship, aliens, bullets):
     # display the last screen
     pygame.display.flip()
 
-def update_bullets(aliens, bullets):
+def update_bullets(game_settings, screen, ship, aliens, bullets):
     """Update bullets position and remove old bullets"""
     bullets.update()
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
+    check_bullet_alien_collisions(game_settings, screen, ship, aliens, bullets)
+
+def check_bullet_alien_collisions(game_settings, screen, ship, aliens, bullets):
+    if len(aliens) == 0:
+        bullets.empty()
+        create_fleet(game_settings, screen, ship, aliens)
 
 def fire_bullet(game_settings, screen, ship, bullets):
     if len(bullets) < game_settings.bullets_allowed:
@@ -82,7 +88,7 @@ def create_alien(game_settings, screen, aliens, alien_number, row_number):
     aliens.add(alien)
 
 def create_fleet(game_settings, screen, ship, aliens):
-    """Create alines fleet"""
+    """Create aliens fleet"""
     # Create aliend and compute how much aliens can exists at the row
     alien = Alien(game_settings, screen)
     number_aliens_x = get_number_aliens_x(game_settings, alien.rect.width)
