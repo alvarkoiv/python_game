@@ -13,7 +13,7 @@ class Button():
         self.prepare_msg(msg)
 
     def prepare_msg(self, msg):
-        self.msg_image = pygame.font.render(msg, True, self.text_color, self.button_color)
+        self.msg_image = self.font.render(msg, True, self.text_color, self.button_color)
         self.msg_image_rect = self.msg_image.get_rect()
         self.msg_image_rect.center = self.rect.center
 
