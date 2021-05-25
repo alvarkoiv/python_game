@@ -7,7 +7,7 @@ Projekti eesmärgiks on pakkuda lõbu ja, et õppida kuidas pythonis mängu teha
 Mängu edukaks installeerimiseks peab alla laadima kõik failid repositooriumis välja arvatud readme fail.
 
 Juhtnupud:
-Liikumine - W, A, S, D
+Liikumine - A (vasakule), D (paremale)
 Tulistamine - Tühik
 Mängust väljumine - Q
 
