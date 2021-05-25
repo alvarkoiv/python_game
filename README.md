@@ -5,3 +5,11 @@ Projektiks on mäng, kus tuleb pidevalt uusi vastaseid (laevu) ja sina juhid all
 Projekti eesmärgiks on pakkuda lõbu ja, et õppida kuidas pythonis mängu teha.
 
 Mängu edukaks installeerimiseks peab alla laadima kõik failid repositooriumis välja arvatud readme fail.
+
+Juhtnupud:
+Liikumine - W, A, S, D
+Tulistamine - Tühik
+Mängust väljumine - Q
+
+Kontakt:
+gmail - alvar.koiv@khk.ee
