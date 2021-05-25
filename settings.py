@@ -18,15 +18,15 @@ class Settings:
         self.bullets_allowed = 3
         # aliens settings
 
-        self.fleet_drop_speed = 7
+        self.fleet_drop_speed = 8
         # fleet direction right = 1, left = -1
 
-        self.speedup_scale = 1.25
+        self.speedup_scale = 1.1
 
     def init_dynamic_settings(self):
-        self.ship_speed_factor = 1.5
-        self.bullet_speed_factor = 1.5
-        self.alien_speed_factor = 1.5
+        self.ship_speed_factor = 0.5
+        self.bullet_speed_factor = 0.5
+        self.alien_speed_factor = 0.4
 
         self.fleet_direction = 1
 
